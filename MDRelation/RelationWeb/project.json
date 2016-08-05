@@ -14,9 +14,8 @@
     "Microsoft.Extensions.Logging.Console": "1.0.0",
     "Microsoft.Extensions.Logging.Debug": "1.0.0",
     "Microsoft.Extensions.Options.ConfigurationExtensions": "1.0.0",
-    "MongoDB.Bson.Dotnet": "1.0.0-*",
-    "MongoDB.Driver.Core.Dotnet": "1.0.0-*",
-    "MongoDB.Driver.Dotnet": "1.0.0-*"},
+    "MDRelation.Dal": "1.0.0-*"
+  },
 
   "tools": {
     "Microsoft.AspNetCore.Server.IISIntegration.Tools": "1.0.0-preview2-final"
