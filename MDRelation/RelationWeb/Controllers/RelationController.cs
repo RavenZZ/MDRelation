@@ -34,9 +34,9 @@ namespace RelationWeb.Controllers
                 EntityId = model.eid,
                 Type = model.type
             };
-            var r = provider.AddRelation(relation);
+            var r = provider.AddRelation2(relation);
 
-           return r!=null;
+           return true;
         }
 
         [HttpPost("setmulti")]

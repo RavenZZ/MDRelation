@@ -29,6 +29,14 @@ namespace MDRelation.Dal
         }
 
         //private static readonly Lazy<RelationProvider> lazy = new Lazy<RelationProvider>(() => new RelationProvider());
+        
+         public bool AddRelation2(Relation relation)
+        {
+         
+            return this.Insert(relation);
+        }
+        
+
 
      
         public Entity.Relation AddRelation(Entity.Relation relation)
