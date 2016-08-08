@@ -8,6 +8,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 
+using MD.Configuration;
+
 namespace RelationWeb
 {
     public class Startup
@@ -29,6 +31,10 @@ namespace RelationWeb
         {
             // Add framework services.
             services.AddMvc();
+            services.AddOptions();
+
+            services.Configure<AppSettings>(Configuration.GetSection("AppSettings"));
+            services.AddSingleton<IConfiguration>(Configuration);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
