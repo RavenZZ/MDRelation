@@ -5,9 +5,9 @@ using System.Threading.Tasks;
 
 namespace MDRelation.Dal
 {
-    public class Class1
+    public class RelationProvider
     {
-        public Class1()
+        public RelationProvider()
         {
         }
     }
